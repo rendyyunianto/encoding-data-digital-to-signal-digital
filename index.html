@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/jpg" href="images/logoS.jpg" />
+    <title>Sinyal</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/cover.css" rel="stylesheet">
+    <style type="text/css">
+      .box1{height: 60px; font-size: 1.2em;}
+    </style>
+  </head>
+  <body>
+   <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Encoding data digital to sinyal digital</h3>              
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li class="active"><a href="#">Menu Utama</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="inner cover">
+            <h1 class="cover-heading">Masukkan Data.</h1>
+            <p class="lead">Masukkan teks dan kemudian pilih jenis pengkodean untuk sinyal output</p>
+          </div>  
+            <form role="form" action="result.php" method="post">
+              <div class="form-group">
+                <label for="box_text">plaintext</label>
+                <input type="text" class="form-control box1" id="textU" name="text" placeholder="Masukkan Teks">
+              </div>
+              <div class="form-group">
+                <label for="ejemplo_password_1">Jenis code</label>
+                <select id="EncodType" name="EncodType" class="form-control">
+                  <option id="EncodType" name="EncodType" value="2">NRZ-L</option>
+                  <option id="EncodType" name="EncodType" value="3">NRZ-I</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-default">Kirim</button>
+            </form>          
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Mohammad Rendy yunianto <a href="https://github.com/rendyyunianto">GitHub</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
